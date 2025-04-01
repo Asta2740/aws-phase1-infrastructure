@@ -4,7 +4,7 @@
 This project demonstrates how to build a serverless portfolio website using AWS services. The site is hosted on S3, secured with HTTPS using CloudFront, and includes a form that submits data to a Lambda function through API Gateway. The Lambda function processes the form data and stores it in an S3 bucket.
 
 ## Architecture Diagram
-Diagram: ![Diagram](./architecture diagram.png)
+Diagram: ![Diagram](./architecture_diagram.png)
 
 ## Setup Instructions
 1. **Create an S3 Bucket**:
