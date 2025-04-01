@@ -25,7 +25,7 @@ Diagram: ![Diagram](./architecture_diagram.png)
    - Runtime: Python 3.9
    - Code: [lambda_function.py](./lambda_function.py)
    - Attach IAM role `mini-world` with S3 write permissions.
-   [Diagram](./Diagram.png).
+   - Diagram: ![Diagram](./Diagram.png).
 
 5. **Testing and Validation**:
    - Access the site via the CloudFront URL (e.g., `https://d1rbt0ac744n52.cloudfront.net`).
