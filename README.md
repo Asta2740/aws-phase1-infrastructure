@@ -65,9 +65,9 @@ Here’s a chronological overview of my progress from March 3 to March 29, 2025:
 - **March 3**: Researched cloud platforms and chose AWS.
 - **March 4**: Created an AWS account and watched an introductory video.
 - **March 5**: Launched my first EC2 instance and explored the AWS Management Console.
-- **March 6**: Deepened EC2 knowledge (AMIs, instance types).
-- **March 7**: Set up RDS and connected it to EC2.
-- **March 8**: Built a simple web app with EC2 and RDS.
+- **March 6**: Deepened EC2 knowledge (AMIs, instance types,security groups, VPC).
+- **March 7**: Created an ALB and ASG with a warm pool (1 stopped instance), installed Apache.
+- **March 8**: Set up RDS and connected it to EC2 , Build a simple web app with EC2 and RDS.
 - **March 9**: Configured CloudWatch to monitor EC2 and RDS.
 - **March 10**: Explored custom metrics (e.g., active sessions).
 - **March 11**: Automated EC2 restarts with Lambda and Step Functions.
