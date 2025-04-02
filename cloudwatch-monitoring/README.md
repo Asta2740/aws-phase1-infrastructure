@@ -4,7 +4,7 @@
 This project establishes a comprehensive monitoring system for an EC2 instance running Apache and a PostgreSQL RDS database, using AWS CloudWatch. Key tasks include installing and configuring the CloudWatch agent to collect system metrics (e.g., disk, memory) and logs (e.g., Apache access, authentication), setting up alarms for performance and security events, building a dashboard for visualization, and integrating a custom metric to track active user sessions. A standout achievement was detecting and analyzing a dictionary attack via Apache log monitoring, showcasing practical application of security monitoring skills.
 
 ## Architecture Diagram
-![architecture.png](./diagrams/architecture.png)
+![architecture.png](./Diagrams/architecture.png)
 
 ## Setup Instructions
 1. **Install and Configure CloudWatch Agent**:
