@@ -26,6 +26,7 @@ Below are the key projects completed during Phase 1, each linked to its detailed
    - **Description**: Configured comprehensive monitoring for EC2 and Apache logs with CloudWatch, including custom queries and SNS alarms for 404 spikes.
    - **Key Services**: CloudWatch, EC2, SNS.
    - **Skills Learned**: Log analysis, alerting, dashboard creation.
+   
 3. **[EC2 Automation with Lambda and Step Functions](./ec2-automation/README.md)**  
    - **Description**: Automated EC2 instance restarts based on high CPU utilization using Lambda and Step Functions, triggered by a CloudWatch alarm.
    - **Key Services**: EC2, Lambda, Step Functions, CloudWatch.

@@ -75,7 +75,7 @@ The goal was to build a functional web application hosted on AWS, starting with 
 
 ## Architecture Diagram
 
-(Placeholder: See [web-app-architecture.png](diagrams/web-app-architecture.png) for a visual of EC2, ALB, ASG, and RDS setup.)
+(Placeholder: See ![web-app-architecture.png](diagrams/web-app-architecture.png) for a visual of EC2, ALB, ASG, and RDS setup.)
 
 # Try It Yourself
 
