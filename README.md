@@ -17,20 +17,20 @@ I started my cloud journey on March 3, 2025, with no prior experience, determine
 
 Below are the key projects completed during Phase 1, each linked to its detailed documentation:
 
-1. **[Serverless Portfolio Site](./serverless-portfolio/README.md)**  
-   - **Description**: Built a static website hosted on S3 with HTTPS via CloudFront, featuring a form that submits data to Lambda via API Gateway and stores it in S3.
-   - **Key Services**: S3, CloudFront, Lambda, API Gateway.
-   - **Skills Learned**: Serverless architecture, static hosting, API integration.
+1. **[Web Application Infrastructure](./Web-Application-Infrastructure/README.md)**  
+   - **Description**: Built a scalable PHP web application hosted on EC2 with Apache, integrated with a PostgreSQL database on RDS, and enhanced with load balancing and auto-scaling for reliability.  
+   - **Key Services**: EC2, RDS, Elastic Load Balancing (ALB), Auto Scaling Groups (ASG), IAM, Security Groups.  
+   - **Skills Learned**: Cloud instance management, database integration, scalability with load balancers and auto-scaling, basic networking, and security practices.
 
-2. **[EC2 Automation with Lambda and Step Functions](./ec2-automation/README.md)**  
+2. **[CloudWatch Monitoring and Alarms](./cloudwatch-monitoring/README.md)**  
+   - **Description**: Configured comprehensive monitoring for EC2 and Apache logs with CloudWatch, including custom queries and SNS alarms for 404 spikes.
+   - **Key Services**: CloudWatch, EC2, SNS.
+   - **Skills Learned**: Log analysis, alerting, dashboard creation.
+3. **[EC2 Automation with Lambda and Step Functions](./ec2-automation/README.md)**  
    - **Description**: Automated EC2 instance restarts based on high CPU utilization using Lambda and Step Functions, triggered by a CloudWatch alarm.
    - **Key Services**: EC2, Lambda, Step Functions, CloudWatch.
    - **Skills Learned**: Event-driven automation, orchestration.
 
-3. **[CloudWatch Monitoring and Alarms](./cloudwatch-monitoring/README.md)**  
-   - **Description**: Configured comprehensive monitoring for EC2 and Apache logs with CloudWatch, including custom queries and SNS alarms for 404 spikes.
-   - **Key Services**: CloudWatch, EC2, SNS.
-   - **Skills Learned**: Log analysis, alerting, dashboard creation.
 
 4. **[Security Enhancements with Network ACLs](./security-enhancements/README.md)**  
    - **Description**: Implemented IP blocking using Network ACLs and Lambda, driven by EC2 log analysis of Apache errors and SSH attempts.
@@ -42,7 +42,12 @@ Below are the key projects completed during Phase 1, each linked to its detailed
    - **Key Services**: S3.
    - **Skills Learned**: Storage management, access control.
 
-6. **[AWS CloudTrail Setup](./cloudtrail-setup/README.md)**  
+6. **[Serverless Portfolio Site](./serverless-portfolio/README.md)**  
+   - **Description**: Built a static website hosted on S3 with HTTPS via CloudFront, featuring a form that submits data to Lambda via API Gateway and stores it in S3.
+   - **Key Services**: S3, CloudFront, Lambda, API Gateway.
+   - **Skills Learned**: Serverless architecture, static hosting, API integration.
+
+7. **[AWS CloudTrail Setup](./cloudtrail-setup/README.md)**  
    - **Description**: Enabled a management trail to log API activities for auditing and monitoring.
    - **Key Services**: CloudTrail.
    - **Skills Learned**: Audit logging, environment visibility.
@@ -85,6 +90,6 @@ Here’s a chronological overview of my progress from March 3 to March 29, 2025:
 ## Next Steps
 
 With Phase 1 complete, I plan to:
-- Finish deploying the serverless portfolio site with AWS Amplify.
-- Begin Phase 2, diving into VPC networking, advanced automation, and containerization (e.g., ECS, Docker).
-- Explore certifications like AWS Cloud Practitioner to solidify my knowledge.
+-  Explore certifications like AWS Cloud Practitioner to solidify my knowledge
+-  Continue practical development diving into advanced automation, and containerization (e.g. IAC, ECS, Docker).
+- Begin Phase 2 of my studies 
