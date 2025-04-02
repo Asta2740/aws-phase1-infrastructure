@@ -13,23 +13,24 @@
 
 ## Technical Implementation
 1. **Log Analysis on EC2**:
-   - Script: `codes/ssh_Ip_check.py` `codes/apache_ip_check.py`
+   - Script:    [ssh_Ip_check](./codes/ssh_Ip_check.py) , [apache_ip_check](./codes/apache_ip_check.py)
    - Analyzes Apache logs hourly, identifies IPs with >5 errors (400-410) in the last hour, and stores them in RDS.
 2. **RDS Storage**:
-   - Config: `configs/rds_table.sql`
+   - Config: [rds_table](./configs/rds_table.sql)
    - Stores problematic IPs with timestamps and error counts.
 3. **Lambda NACL Updates**:
-   - Script: `codes/Lambda_ALC_Denier.py`
+   - Script: [Lambda_ALC_Denier](./codes/Lambda_ALC_Denier.py`)
    - Updates Network ACLs to deny traffic from identified IPs.
 4. **IAM Permissions**:
-   - Configs: `configs/iam_logs_policy.json`, `configs/iam_ec2_lambda_policy.json`
+   - Configs: [iam_logs_policy](./configs/iam_logs_policy.json), [iam_ec2_lambda_policy](./configs/iam_ec2_lambda_policy.json)
    - Grants access to logs, EC2, and NACL operations.
 5. **Log Query**:
-   - Config: `configs/log_query.txt`
+   - Config: [log_query](./configs/log_query.txt)
+   ![apache_ip_check](./diagrams/architecture_diagram.png)
    - Filters and aggregates log data for analysis.
 
 ## Architecture
-*(Placeholder for diagram: `diagrams/architecture_diagram.png`)*  
+   ![apache_ip_check](./diagrams/architecture_diagram.png)
 - EC2 runs `check_ips.py` hourly via crontab.
 - Logs are pulled from CloudWatch Logs.
 - IPs are stored in RDS and sent to Lambda.
