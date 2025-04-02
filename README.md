@@ -1,6 +1,6 @@
 # GitHub Documentation for Phase 1: Infrastructure Engineering – Cloud Foundations
 
-Welcome to my AWS learning journey! This repository documents my hands-on projects and progress during **Phase 1: Infrastructure Engineering – Cloud Foundations**, spanning from **March 3, 2025**, to **March 29, 2025**. As an aspiring infrastructure engineer with a future goal of transitioning into security engineering, I’ve focused on mastering foundational AWS services, automation, monitoring, and security practices. This repository captures my work, organized chronologically to reflect my learning progression, and includes detailed project documentation, code snippets, and key takeaways.
+Welcome to my AWS learning journey! This repo tracks my hands-on projects and progress during Phase 1: Cloud Foundations, from March 3, 2025, to March 29, 2025. My goal was to build a strong AWS foundation, focusing on infrastructure, automation, monitoring, and security. This repo is my learning journal, packed with project docs, code snippets, and key takeaways.
 
 ## Introduction
 
