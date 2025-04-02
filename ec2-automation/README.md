@@ -14,16 +14,16 @@ This project automates the restart of EC2 instances when CPU utilization exceeds
    - Create a role (e.g., `ec2-automation-role`) with permissions for EC2 (`ec2AcessInstances`, `StateMachineTrigger`) and CloudWatch Logs.
 
 2. **Lambda Functions**:
-   - **StepMachineTrigger**: [StateMachineTrigger.py](./Sources/StateMachineTrigger.py )
-   - **StopEC2Instances**: [stop_ec2.py](./Sources/stop_ec2.py)
-   - **StartEC2Instances**: [start_ec2.py](./Sources/start_ec2.py)
-   - **CheckEC2Instances**: [check_ec2.py](./Sources/check_ec2.py)
+   - **StepMachineTrigger**: [StateMachineTrigger.py](./Functions/StateMachineTrigger.py )
+   - **StopEC2Instances**: [stop_ec2.py](./Functions/stop_ec2.py)
+   - **StartEC2Instances**: [start_ec2.py](./Functions/start_ec2.py)
+   - **CheckEC2Instances**: [check_ec2.py](./Functions/check_ec2.py)
    - Runtime: Python 3.9
    - Attach the IAM role created above.
 
 3. **Step Function**:
    - Create a state machine named `EC2RestartStateMachine`.
-   - Definition: [step_function.json](./Sources/step_function.json)
+   - Definition: [step_function.json](./Functions/step_function.json)
    - Replace `<ARN>` placeholders with the actual Lambda ARNs.
 
 4. **CloudWatch Alarm**:

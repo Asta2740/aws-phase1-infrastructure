@@ -4,7 +4,7 @@ Welcome to my AWS learning journey! This repository documents my hands-on projec
 
 ## Introduction
 
-Starting with no prior cloud experience, I embarked on this journey on March 3, 2025, to build a strong foundation in AWS infrastructure engineering. Phase 1 emphasizes hands-on experience with core AWS services—such as EC2, RDS, S3, Lambda, Step Functions, CloudWatch, and Network ACLs—while introducing automation, monitoring, and security concepts. Each project builds on the last, showcasing my growing skills and problem-solving abilities. This repository serves as both a personal record and a resource for others exploring AWS.
+I started my cloud journey on March 3, 2025, with no prior experience, determined to build a solid foundation in AWS infrastructure engineering. Phase 1 is all about hands-on learning with core AWS services like EC2, RDS, S3, Lambda, Step Functions, CloudWatch, and Network ACLs. Along the way, I’m diving into automation, monitoring, and security to develop a well-rounded skill set. Each project builds on the last, reflecting my progress and problem-solving approach. This repository is both a personal record of my journey and a resource for anyone else exploring AWS.
 
 ## Repository Structure
 
