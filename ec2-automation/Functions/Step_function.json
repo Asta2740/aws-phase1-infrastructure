@@ -1,0 +1,61 @@
+{
+    "Comment": "Restart EC2 Instance based on Alarm",
+    "StartAt": "StopEC2",
+    "States": {
+      "StopEC2": {
+        "Type": "Task",
+        "Resource": "arn:aws:lambda:[Region]:[Account ID]:function:StopEC2Instances:$LATEST",
+        "Next": "WaitForStopped"
+      },
+      "WaitForStopped": {
+        "Type": "Wait",
+        "Seconds": 15,
+        "Next": "CheckIfStopped"
+      },
+      "CheckIfStopped": {
+        "Type": "Task",
+        "Resource": "arn:aws:lambda:[Region]:[Account ID]:function:CheckEC2Instances:$LATEST",
+        "Next": "IsStopped"
+      },
+      "IsStopped": {
+        "Type": "Choice",
+        "Choices": [
+          {
+            "Variable": "$.status",
+            "StringEquals": "stopped",
+            "Next": "StartEC2"
+          }
+        ],
+        "Default": "WaitForStopped"
+      },
+      "StartEC2": {
+        "Type": "Task",
+        "Resource": "arn:aws:lambda:[Region]:[Account ID]:function:StartEC2Instances:$LATEST",
+        "Next": "WaitForRunning"
+      },
+      "WaitForRunning": {
+        "Type": "Wait",
+        "Seconds": 15,
+        "Next": "CheckIfRunning"
+      },
+      "CheckIfRunning": {
+        "Type": "Task",
+        "Resource": "arn:aws:lambda:[Region]:[Account ID]:function:CheckEC2Instances:$LATEST",
+        "Next": "IsRunning"
+      },
+      "IsRunning": {
+        "Type": "Choice",
+        "Choices": [
+          {
+            "Variable": "$.status",
+            "StringEquals": "running",
+            "Next": "Success"
+          }
+        ],
+        "Default": "WaitForRunning"
+      },
+      "Success": {
+        "Type": "Succeed"
+      }
+    }
+  }

@@ -4,7 +4,7 @@
         {
             "Effect": "Allow",
             "Action": "s3:PutObject",
-            "Resource": "arn:aws:s3:::mini-hello/*"
+            "Resource": "arn:aws:s3:::example-bucket/*"
         }
     ]
 }

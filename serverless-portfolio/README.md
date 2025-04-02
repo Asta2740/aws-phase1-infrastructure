@@ -4,7 +4,7 @@
 This project demonstrates how to build a serverless portfolio website using AWS services. The site is hosted on S3, secured with HTTPS using CloudFront, and includes a form that submits data to a Lambda function through API Gateway. The Lambda function processes the form data and stores it in an S3 bucket.
 
 ## Architecture Diagram
-Diagram: ![Diagram](./architecture_diagram.png)
+- Diagram: ![Diagram](./Diagrams/architecture_diagram.png)
 
 ## Setup Instructions
 1. **Create an S3 Bucket**:
@@ -23,14 +23,14 @@ Diagram: ![Diagram](./architecture_diagram.png)
 4. **Create Lambda Function**:
    - Name: `mini-hello-formsubmissions`
    - Runtime: Python 3.9
-   - Code: [lambda_function.py](./lambda_function.py)
+   - Code: [lambda_function.py](./Functions/lambda_function.py)
    - Attach IAM role `mini-world` with S3 write permissions.
-   - Diagram: ![Diagram](./Diagram.png).
+   - Diagram: ![Diagram](./Diagrams/Diagram.png).
 
 5. **Testing and Validation**:
    - Access the site via the CloudFront URL (e.g., `https://d1rbt0ac744n52.cloudfront.net`).
    - Submit the form and verify data is stored in S3 under the `messages/` prefix.
-   - Verified the JSON file was saved in S3 under messages/ (e.g., 2025-03-31-025322-f79e9c91-6f0b-4090-a6e7-52d8d100e331.json).
+   - Verified the JSON file was saved in S3 under messages/ (e.g., 2025-03-31-xxx-xxx-xxx-xxx.json).
    - Checked CloudWatch logs to confirm successful Lambda execution.
 
 ## Lessons Learned
