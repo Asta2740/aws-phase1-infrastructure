@@ -1,0 +1,9 @@
+SELECT COUNT(*) AS error_count
+FROM logs
+WHERE
+    message MATCHES /^(?<ip>\S+) \S+ \S+ \[(?<logTime>[^\]]+)] "(?<method>\S+) (?<url>\S+) (?<protocol>\S+)" (?<status>\d{3}) (?<bytes>\d+) "(?<referrer>[^"]*)" "(?<agent>[^"]*)"/
+    AND status >= 400
+    AND status <= 410
+GROUP BY ip, TIME_BUCKET(1h)
+HAVING error_count > 5
+ORDER BY error_count DESC

@@ -1,0 +1,15 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": ["logs:StartQuery", "logs:GetQueryResults"],
+            "Resource": "arn:aws:logs:[Region]:[Account ID]:log-group:apache-access-log:*"
+        },
+        {
+            "Effect": "Allow",
+            "Action": ["logs:DescribeLogGroups"],
+            "Resource": "arn:aws:logs:[Region]:[Account ID]:log-group:apache-access-log:*"
+        }
+    ]
+}
